@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+span {
+  color: blue;
+}
+
+.input {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="email"] {
+  width: 80%;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+}
+
+input[type="text"] {
+  width: 80%;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+}
+
+input[type="password"] {
+  width: 80%;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+}
+
+#btn-submit {
+  padding: 10px 30px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-submit:hover {
+  background-color: blueviolet;
+}
+
+/* media start  */
+
+@media (768px >= width) {
+  h1 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  input[type="password"] {
+    width: 100%;
+  }
+  .input {
+    padding: 50px;
+  }
+}
+
+@media (400px >= width) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* media end  */
+
+/* dashbord page start  */
+/* Common styles */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.card {
+  padding: 50px 30px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+/* Balance Status Section */
+#balance-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+#deposite {
+  background-color: blueviolet;
+  width: 25%;
+}
+#withdraw {
+  background-color: rgb(19, 137, 98);
+  width: 25%;
+}
+#balance {
+  background-color: rgb(229, 145, 85);
+  width: 25%;
+}
+
+/* Balance Deposit and Withdraw Sections */
+#balance-deposit-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+#balance-withdraw {
+  background-color: rgb(120, 238, 148);
+  width: 48%;
+}
+#balance-deposite {
+  background-color: rgb(143, 137, 223);
+  width: 48%;
+}
+
+/* Media Queries */
+@media (max-width: 776px) {
+  .container {
+    margin: 0 auto !important;
+    gap: 0 !important;
+  }
+  ::placeholder {
+    text-align: center !important;
+  }
+  #balance-status,
+  #balance-deposit-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100% !important;
+    margin-bottom: 20px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  #balance-status,
+  #balance-deposit-container {
+    margin: 30px auto;
+  }
+}
